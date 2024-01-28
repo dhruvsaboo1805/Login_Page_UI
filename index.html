@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="login-container" id="loginContainer">
+    <form class="login-form" id="loginForm">
+      <h2>Log In To your Account!</h2>
+      <div class="input-container">
+        <input type="text" id="username" placeholder="Username" required>
+      </div>
+      <div class="input-container">
+        <input type="password" id="password" placeholder="Password" required>
+      </div>
+      <button type="submit">Login</button>
+      <div class="new-user-FP">
+        <p class="signup-link">New User? <a href="#" id="signupLink">Sign Up</a></p>
+        <a href="#" class="forgot-password">Forgot Password?</a>
+      </div>
+      <p class="login-content">Or login with:</p>
+      <div class="social-login">
+        <a href="#" class="social-login-link google"><img src="/assets/google-symbol.png" alt="Google" width="30px" height="30px"> Google</a>
+        <a href="#" class="social-login-link facebook"><img src="/assets/facebook-logo.png" alt="Facebook" width="30px"
+            height="30px"> Facebook</a>
+        <a href="#" class="social-login-link github"><img src="/assets/github.png" alt="GitHub" width="30px"
+            height="30px"> GitHub</a>
+      </div>
+    </form>
+
+    <!-- SIGN UP FORM STARTS -->
+    <div class="login-form sign-up-container" id="signupContainer">
+      <form class="signup-form" id="signupForm">
+        <h2>Create an Account</h2>
+        <div class="input-container">
+          <input type="text" id="signupUsername" placeholder="Username" required>
+        </div>
+        <div class="input-container">
+          <input type="email" id="signupEmail" placeholder="Email" required>
+        </div>
+        <div class="input-container">
+          <input type="password" id="signupPassword" placeholder="Password" required>
+        </div>
+        <button id = "sign-up-btn" type="submit">Sign Up</button>
+        <p class="login-link">Already have an account?    <a href="#" id="loginLink">Login</a></p>
+      </form>
+    </div>
+  </div>
+
+  <script src="/script.js"></script>
+</body>
+
+</html>
